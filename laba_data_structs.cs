@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -47,7 +48,7 @@ namespace AMOGUS
         static void ArrayFuncs()
         {
             Console.WriteLine("Укажите размерность массива:"); int n = int.Parse(Console.ReadLine());
-            int[] array = new int[n];
+            Array array = new Array[n];
             Console.WriteLine("Введите элементы массива через пробел:");
             string[] array1 = Console.ReadLine().Split(' ');
             if (array1.Length != n)
@@ -57,14 +58,14 @@ namespace AMOGUS
             }
             for (int i = 0; i < n; i++)
             {
-                array[i] = int.Parse(array1[i]);
+                array = Console.ReadLine().Split(' ');
             }
             while (true)
             {
                 int numer;
                 for (int i = 0; i < array.Length; i++)
                 {
-                    Console.WriteLine(array[i]);
+                    Console.WriteLine(array);
                 }
                 Console.WriteLine(@" 
 Возможные действия 
@@ -774,7 +775,7 @@ namespace AMOGUS
                         break;
                     case "6":
                         numer = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(numer.GetType);
+                        Console.WriteLine(hashtable.GetType);
                         Console.ReadKey();
                         break;
                     case "7":
