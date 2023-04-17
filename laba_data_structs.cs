@@ -50,16 +50,9 @@ namespace AMOGUS
             Console.WriteLine("Укажите размерность массива:"); int n = int.Parse(Console.ReadLine());
             Array array = new Array[n];
             Console.WriteLine("Введите элементы массива через пробел:");
-            string[] array1 = Console.ReadLine().Split(' ');
-            if (array1.Length != n)
-            {
-                Console.WriteLine("Неправильное количество элементов");
-                ArrayFuncs();
-            }
-            for (int i = 0; i < n; i++)
-            {
-                array = Console.ReadLine().Split(' ');
-            }
+
+            array = Console.ReadLine().Split(' ');
+
             while (true)
             {
                 int numer;
